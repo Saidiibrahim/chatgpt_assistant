@@ -1,8 +1,9 @@
 import openai
+from decouple import config
 
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = config("OPENAI_KEY")
 
 # Set up the OpenAI model
 model_engine = "text-davinci-003"

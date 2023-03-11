@@ -3,6 +3,7 @@ import boto3
 from botocore.exceptions import BotoCoreError, ClientError
 import os
 # import pyttsx3
+from decouple import config
 
 
 """pyttsx3 Engine Setup"""
@@ -39,8 +40,8 @@ def get_audio():
 # Set up the Amazon Polly client
 client = boto3.client('polly',
                       region_name='us-east-1',
-                      aws_access_key_id='AKIARVJD6D6GKJPOZYMX',
-                      aws_secret_access_key='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')
+                      aws_access_key_id=config("AWS_ACCESS_KEY_ID"),
+                      aws_secret_access_key=config("AWS_SECRET_ACCESS_KEY"))
 
 
 def speak(text):
