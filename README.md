@@ -36,15 +36,17 @@ Set the following environment variables:
 
 Note: Replace <your_openai_secret_key>, <your_aws_access_key_id>, and <your_aws_secret_access_key> with your actual API keys.
 
-Save these environment variables by adding the above commands to your .bashrc or .bash_profile file.
+Save these environment variables by adding the above commands to a .env file in the root directory of this project.
 
 ## ⚠️ Limitations and Future Work
 
-Currently, this voice assistant is limited in its capabilities, and can only respond to a small number of pre-defined queries. In the future, additional functionality could be added, such as support for more natural language queries and integration with additional APIs and services.
+One of the limitations known so far is the speed at which the app takes to recognise speech, send a request to the ChatGPT API, and convert the returned text into speech.
+Perhaps this is due to the fact that the app is running on a local machine (a 2017 Macbook Pro with intel core i5), and not a server. Some ideas to improve this further include:
+- Using a server to run the app, and using a cloud service to host the ChatGPT API.
+- Using a different speech recognition and text-to-speech library, such as OpenAI's Whisper API, which is a cloud-based API that can be used to generate speech output.
 
-## Contributors
-- Ibrahim (Main Contributor)
-- Contributions are welcome!
+
+Nevertheless, this is something that can be improved in the future.
 
 Special thanks to the creators of the OpenAI and Amazon Polly APIs for providing the tools that made this project possible.
 
@@ -52,4 +54,4 @@ Special thanks to the creators of the OpenAI and Amazon Polly APIs for providing
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact
-If you have any questions or issues with this project, please contact Jane Doe at janedoe@example.com.
+If you have any questions or issues with this project, please contact Jane Doe at ibrahim.aka.ajax@gmail.com.

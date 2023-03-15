@@ -36,7 +36,7 @@ def get_audio():
 #    engine.runAndWait()
 
 
-""""AMAZON POLLY"""
+""""TTS W/ AMAZON POLLY"""
 # Set up the Amazon Polly client
 client = boto3.client('polly',
                       region_name='us-east-1',
