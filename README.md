@@ -1,4 +1,7 @@
-# ChatGPT Voice Assistant....
+# ChatGPT Voice Assistant
+![](public/image_01.png)
+
+
 ## 🚀 Project Overview 
 
 This project is a simple voice assistant that can answer questions and perform basic tasks, such as searching the web or playing music.
@@ -54,4 +57,4 @@ Special thanks to the creators of the OpenAI and Amazon Polly APIs for providing
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact
-If you have any questions or issues with this project, please contact Jane Doe at ibrahim.aka.ajax@gmail.com.
+If you have any questions or issues with this project, please contact Ibrahim at ibrahim.aka.ajax@gmail.com.
