@@ -48,8 +48,8 @@ Perhaps this is due to the fact that the app is running on a local machine (a 20
 - Using a server to run the app, and using a cloud service to host the ChatGPT API.
 - Using a different speech recognition and text-to-speech library, such as OpenAI's Whisper API, which is a cloud-based API that can be used to generate speech output.
 
-
-Nevertheless, this is something that can be improved in the future.
+Furthermore, I plan to add error handling to the app, so that it can handle errors such as the ChatGPT API returning an error, or the user not speaking into the microphone. To ensure that this app is reliable, secure, and of high quality, I plan to add unit tests to the app.
+Nevertheless, I hope this gives anyone a good starting point to create customised voice assistants.
 
 Special thanks to the creators of the OpenAI and Amazon Polly APIs for providing the tools that made this project possible.
 
