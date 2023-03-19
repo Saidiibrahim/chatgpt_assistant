@@ -10,7 +10,10 @@ The voice assistant uses the OpenAI API to generate responses to user queries, a
 ## Installation 🧰
 To install the dependencies for this project, run the following command:
 
-    pip install -r requirements.txt
+```
+. venv/bin/activate
+ pip install -r requirements.txt
+```
 
 You will also need to set up environment variables for your OpenAI and Amazon Polly API keys.
 See the API Keys section below for more information.
