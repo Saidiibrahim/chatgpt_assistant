@@ -4,7 +4,7 @@
 
 ## 🚀 Project Overview 
 
-This project is a simple voice assistant that can answer questions and perform basic tasks, such as searching the web or playing music.
+This project is a simple voice assistant that can answer questions.
 The voice assistant uses the OpenAI API to generate responses to user queries, and the Amazon Polly API to generate speech output.
 
 ## Installation 🧰
