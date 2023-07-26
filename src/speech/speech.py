@@ -5,13 +5,14 @@ import os
 # import pyttsx3
 from decouple import config
 
-
 """pyttsx3 Engine Setup"""
 # Set up the text-to-speech engine
 # engine = pyttsx3.init()
 
 
 """SpeechRecognition"""
+
+
 # Function to get the user's speech input
 def get_audio():
     r = sr.Recognizer()
@@ -62,5 +63,3 @@ def speak(text):
 
     except (BotoCoreError, ClientError) as error:
         print(error)
-
-

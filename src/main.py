@@ -1,22 +1,9 @@
-from src.speech.speech import get_audio, speak
-from src.large_lang_model.openai import generate_response
+from large_lang_model.llm_response import chatgpt_chain
+from speech.speech import speak, get_audio
 
-# prompt = ""
-content = ""
-
-messages = [
- {"role": "system", "content" : "You’re a kind helpful assistant"}
-]
-
-
-# Main loop to continuously listen for user input
 while True:
     text = get_audio()
     if not text:
         continue
-    # prompt += text
-    content += text
-    messages.append({"role": "user", "content": content})
-    response = generate_response(messages)
-    speak(response)
-    content = ""  # Reset prompt after generating response
+    response_text = chatgpt_chain.predict(human_input=text)
+    speak(response_text)
